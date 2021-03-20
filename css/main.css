@@ -23,16 +23,13 @@ header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
-    padding: 0 20px;
+    margin: 0.7rem;
 }
 
 .logo {
     color: var(--red);
     font-size: 3rem;
 }
-
-nav {}
 
 nav a {
     color: var(--white);
@@ -48,29 +45,48 @@ nav a:hover {
 /* ------- filme principal ---------- */
 
 .filme_principal {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/sg_1_capa_2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('../img/sg_1_capa.jpg');
     height: 400px;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 0 0.5rem 0 0.8rem;
 }
 
 .filme_principal .descricao {
-    margin-bottom: 40px;
+    margin: 10px 0 40px 0;
 }
 
-.titulo {
+.filme_principal .titulo {
+    margin-top: 15%;
     font-size: 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.filme_principal .botao {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .6s ease all;
+}
+
+.filme_principal .botao:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+}
+
+.botao i {
+    margin-right: 10px;
 }
 
 /* -------media query ----------- */
 
 @media(max-width: 800px) {
-    header .container {
-        padding: 0 5px;
-    }
 
     .logo {
         font-size: 2rem;
@@ -82,10 +98,7 @@ nav a:hover {
     }
 }
 
-@media(max-width: 650px) {
-    header .container {
-        padding: 0 5px;
-    }
+@media(max-width: 670px) {
 
     .logo {
         font-size: 1.5rem;
@@ -94,5 +107,40 @@ nav a:hover {
     nav a {
         font-size: 0.8rem;
         padding: 5px;
+    }
+
+    .filme_principal {
+        height: 300px;
+    }
+
+    .filme_principal .titulo {
+        margin-top: 5%;
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .filme_principal {
+        height: 230px;
+    }
+
+    .filme_principal .titulo {
+        padding-top: 5%;
+        font-size: 20px;
+    }
+
+    .filme_principal .descricao {
+        font-size: 0.9rem;
+    }
+
+    .filme_principal .botao {
+        padding: 5px;
+        margin-right: 15px;
+        font-size: 0.7rem;
     }
 }
