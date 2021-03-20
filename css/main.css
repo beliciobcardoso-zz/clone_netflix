@@ -84,6 +84,18 @@ nav a:hover {
     margin-right: 10px;
 }
 
+/* ---- Corrossel -------*/
+
+.carrossel_filmes {
+    margin-top: 1rem;
+}
+
+.box_filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
 /* -------media query ----------- */
 
 @media(max-width: 800px) {

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <!-- OWL CSS -->
+    <link rel="stylesheet" href="./css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl/owl.theme.default.min.css">
     <title>Clone NetFlix</title>
 </head>
 
@@ -13,11 +16,7 @@
     <header>
         <div class="container">
             <h2 class="logo">Clone NetFlix</h2>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
+            <nav><a href="#">Inicio</a><a href="#">Séries</a><a href="#">Filmes</a><a href="#">Documentários</a>
             </nav>
         </div>
     </header>
@@ -25,29 +24,47 @@
         <div class="filme_principal">
             <div class="container">
                 <h3 class="titulo">Stargate SG-1</h3>
-                <P class="descricao">
-                    Uma equipe de exploradores composta de soldados e cientistas viaja através do Stargate, um portal
-                    que dá acesso a outros planetas. Eles usam a passagem para explorar novos mundos e proteger a Terra
-                    contra forças inimigas.
-                </P>
+                <P class="descricao">Uma equipe de exploradores composta de soldados e cientistas viaja através do
+                    Stargate,
+                    um portal que dá acesso a outros planetas. Eles usam a passagem para explorar novos mundos e
+                    proteger a Terra contra forças inimigas. </P>
             </div>
-            <div class="botoes">
-                <button role="button" class="botao">
-                    <i class="fas fa-play"></i>
-                    ASSISTIR AGORA
-                </button>
-                <button role="button" class="botao">
-                    <i class="fas  fa-info-circle"></i>
-                    MAIS INFORMAÇÕES
-                </button>
-            </div>
-
+            <div class="botoes"><button role="button" class="botao"><i class="fas fa-play"></i>ASSISTIR AGORA
+                </button><button role="button" class="botao"><i class="fas  fa-info-circle"></i>MAIS INFORMAÇÕES
+                </button></div>
         </div>
     </main>
+    <div class="carrossel_filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box_filme" src="./img/sg_post_1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box_filme" src="./img/sg_post_2.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box_filme" src="./img/sg_post_3.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box_filme" src="./img/sg_post_4.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box_filme" src="./img/sg_post_5.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box_filme" src="./img/sg_post_6.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box_filme" src="./img/sg_post_7.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
 
-
-    <script src="./js/main.js"></script>
     <script src="https://kit.fontawesome.com/23d1099242.js" crossorigin="anonymous"></script>
+    <!-- OWL JavaScript -->
+    <script src="./js/owl/jquery.min.js"></script>
+    <script src="./js/owl/owl.carousel.min.js"></script>
+    <script src="./js/owl/setup.js"></script>
 </body>
 
 </html>
