@@ -42,12 +42,10 @@
                         AGORA
                     </button>
                 </a>
-                <a href="#">
-                    <button role="button" class="botao">
-                        <i class="fas  fa-info-circle"></i>
-                        MAIS INFORMAÇÕES
-                    </button>
-                </a>
+                <button role="button" class="botao" onclick="modal()">
+                    <i class="fas  fa-info-circle"></i>
+                    MAIS INFORMAÇÕES
+                </button>
             </div>
         </div>
     </main>
@@ -99,7 +97,29 @@
             <div class="item">
                 <img class="box_filme" src="./img/mini10.jpg" alt="" srcset="">
             </div>
+        </div>
+    </div>
 
+    <div class="modal_overlay">
+        <div class="modal">
+            <div class="modal_button" onclick="modal()">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <div class="modal_body">
+                <h3>Stargate SG-1</h3>
+                <p> <strong>Stargate SG-1</strong> é uma telessérie norte-americana de ficção científica baseada no
+                    longa-metragem para o
+                    cinema Stargate (1994). A premissa de ambos é a existência de aparelhos chamados "Stargates" que,
+                    por
+                    intermédio de buracos-de-verme, permitem a viagem interestelar instantânea.</p>
+                <p>A série é produzida pela MGM e filmada no Bridge Studios, em Vancouver, Canadá. O primeiro episódio
+                    foi
+                    transmitido em 27 de julho de 1997 pelo canal de televisão a cabo Showtime, que exibiu as cinco
+                    primeiras temporadas. Desde a sexta temporada, o seriado é transmitido pelo Sci-Fi Channel.
+                    Recentemente, Stargate SG-1 tornou-se o seriado de ficção científica mais duradouro da televisão
+                    americana, ultrapassando The X-Files.</p>
+                <p>Fonte: <a href="https://pt.wikipedia.org/wiki/Stargate_SG-1" target="_blank">Wikipédia</a></p>
+            </div>
         </div>
     </div>
 
@@ -108,6 +128,7 @@
     <script src="./js/owl/jquery.min.js"></script>
     <script src="./js/owl/owl.carousel.min.js"></script>
     <script src="./js/owl/setup.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
