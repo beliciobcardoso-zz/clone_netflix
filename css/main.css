@@ -155,6 +155,15 @@ h2 {
     justify-content: center;
 }
 
+/* ----- Footer ----- */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+
 /* -------media query ----------- */
 
 @media(max-width: 800px) {
