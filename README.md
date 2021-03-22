@@ -17,5 +17,5 @@
 <p>Professor: Felipe Aguiar</p>
 <p>Desenvolvedor Web</p>
 
-<img src="./img/Screenshot_1.jpg" width="150">
-<img src="./img/Screenshot_2.jpg" width="150">
+<img src="./img/Screenshot_1.jpg" width="350">
+<img src="./img/Screenshot_2.jpg" width="600">
